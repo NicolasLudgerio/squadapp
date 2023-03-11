@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "5a1479bc-7b25-4a4c-9f8b-41776a8e233c",
+		"name": "POC-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24606104"
+	},
+	"item": [
+		{
+			"name": "AlarmCentral",
+			"item": [
+				{
+					"name": "create alarm central",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"Alarm 3\",\n        \"macAddress\": \"9ABCDEF01234\",\n        \"password\": \"1234\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/alarm-centrals",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"alarm-centrals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update alarm central",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Alarm 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/alarm-centrals/5d7adc00-799f-4ddf-84f6-a867f2438225",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"alarm-centrals",
+								"5d7adc00-799f-4ddf-84f6-a867f2438225"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list alarm centrals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/alarm-centrals",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"alarm-centrals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get alarm central by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/alarm-centrals/bf7794ff-859f-4765-bd97-c43b630be863",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"alarm-centrals",
+								"bf7794ff-859f-4765-bd97-c43b630be863"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete alarm central",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/alarm-centrals/63c9633b-dceb-4c42-923e-1db4f8744ff2",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"alarm-centrals",
+								"63c9633b-dceb-4c42-923e-1db4f8744ff2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VideoDevice",
+			"item": [
+				{
+					"name": "create video device",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"name\": \"Video 4\",\n            \"serial\": \"STUVWX1234567\",\n            \"username\": \"admin\",\n            \"password\": \"1234\"\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/video-devices",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"video-devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update video device",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Video 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/video-devices/460aceaa-7b19-4c4c-99fb-6a5c372fc428",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"video-devices",
+								"460aceaa-7b19-4c4c-99fb-6a5c372fc428"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list video devices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/video-devices",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"video-devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get video device by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/video-devices/460aceaa-7b19-4c4c-99fb-6a5c372fc428",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"video-devices",
+								"460aceaa-7b19-4c4c-99fb-6a5c372fc428"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete video device",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/video-devices/460aceaa-7b19-4c4c-99fb-6a5c372fc428",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"video-devices",
+								"460aceaa-7b19-4c4c-99fb-6a5c372fc428"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "your token here!",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
